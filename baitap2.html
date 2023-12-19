@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--bài 2-->
+<!--2 * (3 + ‘5’) - ‘2’ + 20 / ‘5’ + (‘1’ + 2 + 6)-->
+<!--2*('35')-‘2’ + 20 / ‘5’ + (‘126’)-->
+<!--('70')-‘2’ + 4 + (‘126’)-->
+<!--68 +4+'126'-->
+<!--72+'126'-->
+<!--'72126'-->
+Bài 3
+<input type="text" id="name">
+<button onclick="hien()";> hiện </button><br>
+<script>
+    function hien() {
+        let a = document.getElementById('name').value;
+        document.write(a);
+    }
+</script>
+ Bài 4 <br>
+<input type="number" id="so1"> <br>
+<input type="number" id="so2">
+<button onclick="sosanh()">So sánh </button>
+<h1 id="ketqua"></h1>
+<script>
+    function sosanh() {
+        let b = document.getElementById('so1').value;
+        let c = document.getElementById('so2').value;
+        let ketqua = document.getElementById('ketqua');
+
+        if (b === c) {
+            ketqua.textContent = "a bằng b";
+        } else {
+            ketqua.textContent = "a không bằng b  ";
+        }
+
+        // Kiểm tra a có lớn hơn b hay không
+        if (b > c) {
+            ketqua.textContent += "a lớn hơn b   ";
+        } else {
+            ketqua.textContent += "a không lớn hơn b   ";
+        }
+
+        // Kiểm tra a có khác b hay không
+        if (b !== c) {
+            ketqua.textContent += "a khác b       ";
+        } else {
+            ketqua.textContent += "a không khác b";
+        }
+    }
+
+
+</script>
+Bài 5<br>
+<input type="number" id="so3"> <br>
+<input type="number" id="so4">
+<button onclick="hcn()">Tính Diện Tích hcn </button>
+<h1 id="ketquahcn"></h1>
+
+<script>
+    function hcn() {
+        let d = document.getElementById('so3').value;
+        let e = document.getElementById('so4').value;
+        document.getElementById('ketquahcn').textContent="s= "+(d * e);
+    }
+</script>
+Bài 6: <br>
+Username:
+<input type="text"><br>
+Password:
+<input type="password"><br>
+City of:
+<input type="text"><br>
+Employmennt:
+<input type="text"><br>
+Web server:
+<select>
+    <option> --Choose a server---</option>
+</select><br>
+ Please specify your role:<br>
+<input type="radio" role="radio"> Admin<br>
+<input type="radio" role="radio"> Engineer<br>
+<input type="radio" role="radio"> Manager<br>
+<input type="radio" role="radio"> Guest<br>
+Single Sign-on the following:<br>
+    <input type="checkbox" role="checkbox">Mail<br>
+<input type="checkbox" role="checkbox"> Payroll<br>
+<input type="checkbox" role="checkbox"> Self-service<br>
+
+<button> Login </button>
+<button> Reset </button>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
